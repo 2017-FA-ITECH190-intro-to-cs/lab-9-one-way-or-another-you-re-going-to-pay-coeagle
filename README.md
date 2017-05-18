@@ -8,7 +8,7 @@
 
 The formula for computing the monthly payments on a loan of P dollars at a given annual percentage rate(APR) for N months is:
 
-![img/pmt.gif]
+![formula][img/pmt.gif]
 
 where `R = APR/1200`, the monthly interest rate in computational form. The monthly payment assumes that interest is compounded monthly on the unpaid balance. Consider the following example in which $1000 is borrowed at 5.1% annual interest rate for 12 months.
 
@@ -16,7 +16,7 @@ where `R = APR/1200`, the monthly interest rate in computational form. The month
 
 `R = APR / 1200 = 5.1 / 1200 = .00425`
 
-![img/ex.gif]
+![example][img/ex.gif]
 
 which is $86.65 when rounded to the nearest penny. You can check the calculations by using a calculator. Your calculations may produce a number that is slightly different than 85.65 due to round-off error in the calculations.
 
