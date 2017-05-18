@@ -24,6 +24,6 @@ which is $86.65 when rounded to the nearest penny. You can check the calculation
 
 Here are few hints. Look at the source code for the [diagonals program](http://itech190.erickuha.com/abstraction/diagonals.html) (courtesy Marty J. Wolf). This is a great opportunity to practice the problem solving technique of dividing the problem into subproblems. Look for ways to compute small parts of the formula above. To raise a number to a power, use the standard JavaScript function `Math.pow()`. For example, `Math.pow(2.5,8)` will calculate and return the value of 2.5<sup>8</sup> = 1525.87890625. In general, `Math.pow(x,k)` calculates and returns x<sup>k</sup> (x raised to the k<sup>th</sup> power).
 
-Your `payment()` function should be inserted into the `loan.html` file at the place indicated by a JavaScript comment that appears in a heading script. Remove the comment and put your function in its place. You also need to un-comment the statements in the `CalculatePayment()` function that displays the payment amount and total interest. That is remove the "/*" and the "*/".
+Your `payment()` function should be inserted into the `loan.html` file at the place indicated by a JavaScript comment that appears in a heading script. Remove the comment and put your function in its place. You also need to un-comment the statements in the `CalculatePayment()` function that displays the payment amount and total interest. That is remove the "//*" and the "/*/".
 
 Once you have completed the assignment, push your edited copy of the repository back to your master branch.
