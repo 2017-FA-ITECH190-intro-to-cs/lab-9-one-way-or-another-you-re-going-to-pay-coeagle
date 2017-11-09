@@ -14,10 +14,17 @@
     <title>Loan Calculator</title>
 
     <script type="text/javascript">
-        // *********************************************************
-        // *** The definition of your Payment function goes here.***
-        // *** Delete these four lines. ****************************
-        // *********************************************************
+         function Payment(prin, apr, months)
+        {
+            var R= apr/(months*100);
+            var L= Math.pow (1+R, months);
+            var top= R * L * prin;
+            var bottom = L - 1;
+            
+            return top/bottom;
+            
+        }
+        
 
         function CalculatePayment() {
             var prin = document.getElementById('prinBox').value;
@@ -26,11 +33,9 @@
             apr = parseFloat(apr);
             var months = document.getElementById('monthsBox').value;
             months = parseInt(months);
-            //  Un-comment the rest of the JavaScript statements in this function
-            //  after you have defined a Payment function.
-            //  Do not make any other changes to this function.
-            /* Remove this entire line
-	           var moPayment = Payment(prin, apr, months);
+         
+            
+	            var moPayment = Payment(prin, apr, months);
                moPayment = moPayment.toFixed(2);
                var interest = months * moPayment - prin;
                interest = interest.toFixed(2);
@@ -40,10 +45,10 @@
 		            + ' in order to pay the loan off in ' + months +
 		            ' months. Over the lifetime of the loan a total of $' +
 		            interest + ' will be paid in interest.</p>'
-	        Remove this entire line */
+	        
         }
 
-        <!--  DO NOT CHANGE ANYTHING BELOW THIS POINT!  -->
+       
     </script>
 </head>
 
